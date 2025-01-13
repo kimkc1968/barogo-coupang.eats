@@ -178,7 +178,7 @@
     <div id="map"></div>
     <div id="controls">
         <div id="controlsHeader">
-            <h2>배민커넥트비즈 표준 권역 </h2>
+            <h2>쿠팡이츠플러스 표준 권역 </h2>
             <input type="text" id="searchBox" placeholder="검색..." oninput="filterCheckboxes()">
             <div id="searchResultCount">검색 결과: 0개</div>
             <button id="resetButton" onclick="resetSelections()">선택 초기화</button>
@@ -222,8 +222,12 @@
                 서울_은평구_은평구동부
             </label>
             <label>
-                <input type="checkbox" id="서울시강남구data1" onchange="toggleData('서울시강남구data1', './강남서부.geojson')">
-                서울_강남구_강남서부
+                <input type="checkbox" id="서울_강서구_강서남부" onchange="toggleData('서울_강서구_강서남부', './서울시_강서남부.geojson')">
+                서울_강서구_강서남부
+            </label>
+            <label>
+                <input type="checkbox" id="서울_강서구_강서중앙" onchange="toggleData('서울_강서구_강서중앙', './서울시_강서중앙.geojson')">
+                서울_강서구_강서중앙
             </label>
             <label>
                 <input type="checkbox" id="서울시영등포data1" onchange="toggleData('서울시영등포data1', './영등포중앙_test1.geojson')">
@@ -236,6 +240,10 @@
             <label>
                 <input type="checkbox" id="서울_관악구_관악중앙" onchange="toggleData('서울_관악구_관악중앙', './서울_관악구_관악중앙.geojson')">
                 서울_관악구_관악중앙
+            </label>
+            <label>
+                <input type="checkbox" id="서울시강남구data1" onchange="toggleData('서울시강남구data1', './강남서부.geojson')">
+                서울_강남구_강남서부
             </label>
             <label>
                 <input type="checkbox" id="서울시강남구data2" onchange="toggleData('서울시강남구data2', './강남남서부.geojson')">
