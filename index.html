@@ -300,6 +300,10 @@
                 수원시_권선구중앙2
             </label>
             <label>
+                <input type="checkbox" id="수원시_권선구서부" onchange="toggleData('수원시_권선구서부', './수원시_권선구 서부.geojson')">
+                수원시_권선구서부
+            </label>
+            <label>
                 <input type="checkbox" id="경기도수원시6" onchange="toggleData('경기도수원시6', './수원 영통구 동부.geojson')">
                 수원시_영통구동부
             </label>
@@ -633,7 +637,7 @@
 
 // NEW 태그 추가
 function addNewTags() {
-    const newItems = ['서울시영등포data1', '서울시강남구data2']; // NEW 표시를 추가할 체크박스 ID 리스트
+    const newItems = ['서울특별시 오픈지역', '오픈지역_경기도']; // NEW 표시를 추가할 체크박스 ID 리스트
     newItems.forEach(id => {
         const checkbox = document.getElementById(id);
         if (checkbox) {
