@@ -178,7 +178,7 @@
     <div id="map"></div>
     <div id="controls">
         <div id="controlsHeader">
-            <h2>쿠팡이츠플러스 표준 권역 </h2>
+            <h2>배민커넥트비즈 표준 권역 </h2>
             <input type="text" id="searchBox" placeholder="검색..." oninput="filterCheckboxes()">
             <div id="searchResultCount">검색 결과: 0개</div>
             <button id="resetButton" onclick="resetSelections()">선택 초기화</button>
@@ -242,6 +242,10 @@
                 서울_관악구_관악중앙
             </label>
             <label>
+                <input type="checkbox" id="서울시서초구data1" onchange="toggleData('서울시서초구data1', './서초중앙.geojson')">
+                서울_서초구_서초중앙
+            </label>
+            <label>
                 <input type="checkbox" id="서울시강남구data1" onchange="toggleData('서울시강남구data1', './강남서부.geojson')">
                 서울_강남구_강남서부
             </label>
@@ -258,8 +262,16 @@
                 서울_강남구_강남중앙
             </label>
             <label>
-                <input type="checkbox" id="서울시서초구data1" onchange="toggleData('서울시서초구data1', './서초중앙.geojson')">
-                서울_서초구_서초중앙
+                <input type="checkbox" id="서울_송파구_송파중앙" onchange="toggleData('서울_송파구_송파중앙', './서울_송파구_송파중앙.geojson')">
+                서울_송파구_송파중앙
+            </label>
+            <label>
+                <input type="checkbox" id="서울_송파구_송파남부" onchange="toggleData('서울_송파구_송파남부', './서울_송파구_송파남부1.geojson')">
+                서울_송파구_송파남부
+            </label>
+            <label>
+                <input type="checkbox" id="서울_송파구_송파서부" onchange="toggleData('서울_송파구_송파서부', './서울_송파구_송파서부.geojson')">
+                서울_송파구_송파서부
             </label>
             <div class="group">
                 <h3>경기도</h3>
@@ -459,6 +471,10 @@
                 <input type="checkbox" id="성남시_성남시수정구중앙" onchange="toggleData('성남시_성남시수정구중앙', './성남시 수정구 중앙.geojson')">
                 성남시_성남시수정구중앙
             </label>
+            <label>
+                <input type="checkbox" id="광주시_광주시남부" onchange="toggleData('광주시_광주시남부', './경기도_광주시_광주시남부1.geojson')">
+                광주시_광주시남부
+            </label>
         <div class="group">
             <h3>전라남도</h3>
             <label>
@@ -494,10 +510,6 @@
                 부산광역시_부산진구
             </label>
             <label>
-                <input type="checkbox" id="부산광역시_부산동래구" onchange="toggleData('부산광역시_부산동래구', './부산시_동래구1.geojson')">
-                부산광역시_부산동래구
-            </label>
-            <label>
                 <input type="checkbox" id="부산광역시_부산연제구" onchange="toggleData('부산광역시_부산연제구', './부산시_연제구.geojson')">
                 부산광역시_부산연제구
             </label>
@@ -505,6 +517,19 @@
                 <input type="checkbox" id="부산광역시_부산수영구" onchange="toggleData('부산광역시_부산수영구', './부산시_수영구.geojson')">
                 부산광역시_부산수영구
             </label>
+            <label>
+                <input type="checkbox" id="부산광역시_부산해운대구" onchange="toggleData('부산광역시_부산해운대구', './부산시_해운대구1.geojson')">
+                부산광역시_부산해운대구
+            </label>
+            <label>
+                <input type="checkbox" id="부산광역시_부산금정구" onchange="toggleData('부산광역시_부산금정구', './부산시_금정구.geojson')">
+                부산광역시_부산금정구
+            </label>
+            <label>
+                <input type="checkbox" id="부산광역시_부산기장군" onchange="toggleData('부산광역시_부산기장군', './부산시_기장군.geojson')">
+                부산광역시_부산기장군
+            </label>
+
 
         </div>
     </div>
