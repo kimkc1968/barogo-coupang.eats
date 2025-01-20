@@ -540,8 +540,37 @@
                 대구광역시_수성구_수성중앙
             </label>
             <label>
+                <input type="checkbox" id="대구광역시_동구_동구1" onchange="toggleData('대구광역시_동구_동구1', './대구시_동구_동구1.geojson')">
+                대구광역시_동구_동구1
+            </label>
+            <label>
+                <input type="checkbox" id="대구광역시_동구_동구2" onchange="toggleData('대구광역시_동구_동구2', './대구시_동구_동구2.geojson')">
+                대구광역시_동구_동구2
+            </label>
+            <label>
+                <input type="checkbox" id="대구광역시_동구_동구3" onchange="toggleData('대구광역시_동구_동구3', './대구시_동구_동구3.geojson')">
+                대구광역시_동구_동구3
+            </label>
+            <label>
                 <input type="checkbox" id="경산시_경산중앙" onchange="toggleData('경산시_경산중앙', './경산시_경산중앙.geojson')">
                 경산시_경산중앙
+            </label>
+            <label>
+                <input type="checkbox" id="구미시_구미시1" onchange="toggleData('구미시_구미시1', './구미시_구미시1.geojson')">
+                구미시_구미시1
+            </label>
+            <label>
+                <input type="checkbox" id="구미시_구미시2" onchange="toggleData('구미시_구미시2', './구미시_구미시2.geojson')">
+                구미시_구미시2
+            </label>
+            <label>
+                <input type="checkbox" id="구미시_구미시3" onchange="toggleData('구미시_구미시3', './구미시_구미시3.geojson')">
+                구미시_구미시3
+            </label>
+            <label>
+                <input type="checkbox" id="구미시_구미시4" onchange="toggleData('구미시_구미시4', './구미시_구미시4.geojson')">
+                구미시_구미시4
+            </label>
             </label>
         <div class="group">
             <h3>경상남도</h3>
@@ -755,7 +784,7 @@
 
 // NEW 태그 추가
 function addNewTags() {
-    const newItems = ['창원시_의창구1','창원시_의창구2','부산광역시_부산동래구연제구','부산광역시_부산사하구','부산광역시_부산남구','서울_종로구_종로구중구 서부', '서울_종로구_종로구중구 동부', '서울_양천구_양천구로 중앙','서울_종로구_종로구중구 중앙','서울_강북구_강북구중앙','서울_성북구_성북구중앙','서울_성북구_성북구북부','서울_용산구_용산구동부','서울_용산구_용산구중앙']; // NEW 표시를 추가할 체크박스 ID 리스트
+    const newItems = ['대구광역시_동구_동구1','대구광역시_동구_동구2','대구광역시_동구_동구3','구미시_구미시1','구미시_구미시2','구미시_구미시3','구미시_구미시4','창원시_의창구1','창원시_의창구2','부산광역시_부산동래구연제구','부산광역시_부산사하구','부산광역시_부산남구','서울_종로구_종로구중구 서부', '서울_종로구_종로구중구 동부', '서울_양천구_양천구로 중앙','서울_종로구_종로구중구 중앙','서울_강북구_강북구중앙','서울_성북구_성북구중앙','서울_성북구_성북구북부','서울_용산구_용산구동부','서울_용산구_용산구중앙']; // NEW 표시를 추가할 체크박스 ID 리스트
     newItems.forEach(id => {
         const checkbox = document.getElementById(id);
         if (checkbox) {
