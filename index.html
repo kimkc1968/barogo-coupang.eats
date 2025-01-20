@@ -170,7 +170,7 @@
 <body>
     <div id="announcement">
         <div>
-            📢 주의. 쿠팡이츠 권역 업데이트 진행중. / Last Update. 25.01.09(목)
+            📢 주의. 쿠팡이츠 권역 업데이트 진행중. / Last Update. 25.01.20(월)
         </div>
         <button class="close-btn" onclick="closeAnnouncement()">닫기</button>
     </div>
@@ -197,6 +197,22 @@
             </label>
         <div class="group">
             <h3>서울특별시</h3>
+            <label>
+                <input type="checkbox" id="서울_강북구_강북구중앙" onchange="toggleData('서울_강북구_강북구중앙', './서울_강북구_강북구중앙.geojson')">
+                서울_강북구_강북구중앙
+            </label>
+            <label>
+                <input type="checkbox" id="서울_종로구_종로구중구 서부" onchange="toggleData('서울_종로구_종로구중구 서부', './서울_종로구_종로구중구 서부.geojson')">
+                서울_종로구_종로구중구 서부
+            </label>
+            <label>
+                <input type="checkbox" id="서울_종로구_종로구중구 동부" onchange="toggleData('서울_종로구_종로구중구 동부', './서울_종로구_종로구중구 동부.geojson')">
+                서울_종로구_종로구중구 동부
+            </label>
+            <label>
+                <input type="checkbox" id="서울_종로구_종로구중구 중앙" onchange="toggleData('서울_종로구_종로구중구 중앙', './서울_종로구_종로구중구 중앙.geojson')">
+                서울_종로구_종로구중구 중앙
+            </label>
             <label>
                 <input type="checkbox" id="서울_마포구_마포서부" onchange="toggleData('서울_마포구_마포서부', './서울시_마포서부.geojson')">
                 서울_마포구_마포서부
@@ -230,8 +246,16 @@
                 서울_강서구_강서중앙
             </label>
             <label>
+                <input type="checkbox" id="서울_양천구_양천구로 중앙" onchange="toggleData('서울_양천구_양천구로 중앙', './서울_양천구_양천구로 중앙-1.geojson')">
+                서울_양천구_양천구로 중앙
+            </label>
+            <label>
                 <input type="checkbox" id="서울시영등포data1" onchange="toggleData('서울시영등포data1', './서울시_영등포중앙.geojson')">
                 서울_영등포구_영등포중앙
+            </label>
+            <label>
+                <input type="checkbox" id="서울_영등포구_영등포남부" onchange="toggleData('서울_영등포구_영등포남부', './서울_영등포구_영등포남부.geojson')">
+                서울_영등포구_영등포남부
             </label>
             <label>
                 <input type="checkbox" id="서울_관악구_관악북부" onchange="toggleData('서울_관악구_관악북부', './서울시_관악구_관악북부.geojson')">
@@ -694,7 +718,7 @@
 
 // NEW 태그 추가
 function addNewTags() {
-    const newItems = ['서울특별시 오픈지역', '오픈지역_경기도']; // NEW 표시를 추가할 체크박스 ID 리스트
+    const newItems = ['서울_종로구_종로구중구 서부', '서울_종로구_종로구중구 동부', '서울_양천구_양천구로 중앙','서울_종로구_종로구중구 중앙','서울_강북구_강북구중앙']; // NEW 표시를 추가할 체크박스 ID 리스트
     newItems.forEach(id => {
         const checkbox = document.getElementById(id);
         if (checkbox) {
